@@ -2,70 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ritesh Sharma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <div class="container">
-      <img src="images\profile.jpg" alt="Ritesh Photo" class="profile" />
-      <h1>Ritesh Suryakant Sharma</h1>
-      <p>Final Year B.Tech ECE | Aspiring Data Analyst & Developer</p>
+    <div class="theme-toggle">
+      <button id="toggle-theme">🌙</button>
     </div>
+    <img src="images/profile.jpg" alt="Ritesh Sharma">
+    <h1>Ritesh Suryakant Sharma</h1>
+    <p class="tagline"><span id="typing-text"></span></p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
   </header>
 
   <section class="about">
-    <h2>About Me</h2>
-    <p>I’m a final-year B.Tech student in Electronics and Communication Engineering with a passion for IT, web development, and data analysis. Currently seeking internship opportunities to grow my practical skills.</p>
+    <h2>Career Objective</h2>
+    <p>I am a final-year B.Tech ECE student, focused on transitioning into IT and data analysis roles. I aim to apply my programming and analytical skills in real-world projects while contributing to team success and growing as a software engineer.</p>
   </section>
 
-  <section class="skills">
+  <section class="education fade-in">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Electronics & Communication Engineering</strong> – CSMSS Chh. Shahu College of Engineering (2022–2026)</li>
+    </ul>
+  </section>
+
+  <section class="skills fade-in">
     <h2>Skills</h2>
     <ul>
-      <li>C, C++, Java, Python</li>
-      <li>Web Development (HTML, CSS, JS)</li>
-      <li>Android Studio, Flutter</li>
-      <li>DSA, API Integration</li>
+      <li><strong>Languages:</strong> C, C++, Java, Python</li>
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Frameworks/Tools:</strong> Android Studio, Flutter</li>
+      <li><strong>Others:</strong> DSA, GitHub, Firebase, API Integration</li>
     </ul>
   </section>
 
- <section class="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>IPL Data Analysis App:</strong>
-      A Python-based project analyzing IPL trends and predicting outcomes.
-      <a href="https://github.com/riteshsharma28/ipl-data-analysis" target="_blank">View Project</a>
-    </li>
-    <li><strong>Weather App (Flutter):</strong>
-      Mini project using Flutter and OpenWeatherMap API.
-      <a href="https://github.com/riteshsharma28/weather-app-flutter" target="_blank">View Project</a>
-    </li>
-    <li><strong>JourneyGram (Prototype):</strong>
-      A travel journaling app prototype selected for DIPEX national round.
-      <a href="https://github.com/riteshsharma28/journeygram-prototype" target="_blank">View Project</a>
-    </li>
-  </ul>
-</section>
+  <section class="projects fade-in">
+    <h2>Projects</h2>
 
-  <section class="certifications">
+    <div class="project-card">
+      <h3>IPL Data Analysis</h3>
+      <p>Python-based data analysis web app for IPL trends, stats, and predictions.</p>
+      <a href="https://github.com/riteshsharma28/ipl-data-analysis" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Weather App (Flutter)</h3>
+      <p>Mini app showing weather details using OpenWeatherMap API.</p>
+      <a href="https://github.com/riteshsharma28/weather-app-flutter" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>JourneyGram (Prototype)</h3>
+      <p>A travel journaling app selected for DIPEX 2025 national round.</p>
+      <a href="https://github.com/riteshsharma28/journeygram-prototype" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section class="certifications fade-in">
     <h2>Certifications</h2>
     <ul>
-      <li>NPTEL – Problem Solving in C, Java, Python</li>
+      <li>NPTEL – Problem Solving through C</li>
+      <li>NPTEL – Programming in Java</li>
+      <li>NPTEL – The Joy of Computing using Python</li>
       <li>MGM – Full Stack Web Development</li>
-      <li>IC38 – Life Insurance Agent Certificate (English)</li>
-      <li>DIPEX 2025 National Level Participation</li>
-      <li>BYST Volunteer</li>
+      <li>BYST Volunteer – National Level</li>
+      <li>IC38 – Certificate Exam of Insurance Agents (Life)</li>
     </ul>
   </section>
 
-  <section class="contact">
-  <h2>Contact</h2>
-  <p>Email: ritesh.362@gmail.com</p>
-  <p>Phone: 8446719943</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/ritesh-sharma-207415263" target="_blank">ritesh-sharma</a></p>
-  <p>GitHub: <a href="https://github.com/riteshsharma28" target="_blank">riteshsharma28</a></p>
-</section>
+  <section class="achievements fade-in">
+    <h2>Achievements</h2>
+    <ul>
+      <li>2× Class Topper (Medals)</li>
+      <li>2× Cricket Runner-up (Trophies & Medals)</li>
+      <li>Group Dance Runner-up (Trophy)</li>
+      <li>DIPEX 2025 Participation</li>
+    </ul>
+  </section>
+
+  <section class="extras fade-in">
+    <h2>Languages Known</h2>
+    <p>Marathi, Hindi, English</p>
+
+    <h2>Hobbies</h2>
+    <p>Cricket 🏏 | Dance 💃 | Travel/Explore 🌍 | Coding 👨‍💻 | Learning 📚 | Gym 🏋️‍♂️</p>
+  </section>
+
+  <section class="contact fade-in">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> ritesh.362@gmail.com</p>
+    <p><strong>Phone:</strong> 8446719943</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ritesh-sharma-207415263" target="_blank">ritesh-sharma</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/riteshsharma28" target="_blank">riteshsharma28</a></p>
+  </section>
 
   <footer>
     <p>© 2025 Ritesh Suryakant Sharma | Built with 💻 & ☕</p>
