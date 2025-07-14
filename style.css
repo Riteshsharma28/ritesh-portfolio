@@ -1,56 +1,174 @@
+/* Base styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa;
-  color: #333;
   margin: 0;
-  padding: 0;
-}
-
-.container {
-  text-align: center;
-  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 header {
-  background-color: #003366;
-  color: white;
-  padding: 40px 20px;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  position: relative;
 }
 
-.profile {
-  width: 120px;
-  height: 120px;
+header img {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  border: 4px solid white;
-  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  height: 1.5em;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
 }
 
 section {
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
 }
 
 h2 {
-  color: #003366;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  color: #38bdf8;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  list-style: disc;
-  padding-left: 20px;
+  padding-left: 1.2rem;
 }
 
-a {
-  color: #003366;
+li {
+  margin-bottom: 0.75rem;
+}
+
+.project-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.6s ease;
+}
+
+.project-card h3 {
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #cbd5e1;
+}
+
+.project-card a {
+  color: #38bdf8;
   text-decoration: none;
+  font-weight: 500;
 }
 
 footer {
-  background-color: #003366;
-  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* Light mode */
+body.light-theme {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+body.light-theme header {
+  background: linear-gradient(145deg, #e2e8f0, #f8fafc);
+}
+
+body.light-theme h1 {
+  color: #0ea5e9;
+}
+
+body.light-theme .btn {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+body.light-theme h2 {
+  color: #0ea5e9;
+  border-color: #94a3b8;
+}
+
+body.light-theme .project-card {
+  background-color: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+body.light-theme .project-card h3 {
+  color: #0f172a;
+}
+
+body.light-theme .project-card p {
+  color: #1e293b;
+}
+
+body.light-theme .project-card a {
+  color: #2563eb;
+}
+
+body.light-theme footer {
+  color: #334155;
+}
+
+/* Toggle theme button */
+.theme-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+body.light-theme #toggle-theme {
+  color: #0ea5e9;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
 }
