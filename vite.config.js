@@ -1,10 +1,7 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-
-// ⚠️ Replace with your GitHub repo name
-const repoName = "ritesh-portfolio";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: `/${repoName}/`,
   plugins: [react()],
-});
+  base: '/ritesh-portfolio/',  // 👈 must match repo name
+})
