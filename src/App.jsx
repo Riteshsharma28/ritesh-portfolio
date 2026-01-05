@@ -120,8 +120,14 @@ function Hero3D() {
 
         <div className="mt-6 flex gap-4 flex-wrap justify-center sm:justify-start">
           {/* Resume & GitHub buttons */}
-        </div>
-      </motion.div>
+       a
+    href="public/RiteshSharmaResume.pdf"
+    download
+    className="flex items-center gap-2 px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-medium shadow-lg transition"
+  >
+    <Download className="h-5 w-5" />
+    Resume
+  </a>
 
       {/* 3D Logo */}
       <div className={`w-full sm:w-2/5 ${isMobile ? "h-[350px]" : "h-full"} z-10 flex justify-center items-center mb-6 sm:mb-0`}>
