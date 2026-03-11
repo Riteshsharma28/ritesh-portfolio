@@ -121,7 +121,7 @@ function Hero3D() {
         <div className="mt-6 flex gap-4 flex-wrap justify-center sm:justify-start">
   {/* Resume Button */}
   <a
-    href="/RiteshSharmaResume.pdf"
+    href="/public/RiteshSharmaResume.pdf"
     download
     className="flex items-center gap-2 px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-medium shadow-lg transition"
   >
