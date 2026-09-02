@@ -7,17 +7,22 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       colors: {
-        night: "#0B0A1C",
+        ink: "#0A0E17",
+        panel: "#10151F",
+        line: "#1E2633",
+        signal: "#2DD4BF",
+        flag: "#F5A623",
+        paper: "#EDF1F7",
+        inkSoft: "#8D97AC",
       },
-      colors: {
-      night: '#0f0f2e',
-    },
       boxShadow: {
-        'glass': "0 0 0 1px rgba(255,255,255,0.06) inset, 0 20px 80px rgba(79,70,229,0.25)",
-      }
+        glass: "0 0 0 1px rgba(255,255,255,0.06) inset, 0 20px 80px rgba(45,212,191,0.15)",
+      },
     },
   },
   plugins: [],

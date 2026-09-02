@@ -3,4 +3,4 @@
 @tailwind utilities;
 
 html, body, #root { height: 100%; }
-body { @apply bg-night text-white font-inter; }
+body { @apply bg-ink text-paper font-sans; }
