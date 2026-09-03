@@ -206,7 +206,7 @@ function Hero3D() {
 
         <div className="mt-7 flex gap-4 flex-wrap justify-center sm:justify-start">
           <a
-            href={`${import.meta.env.BASE_URL}public/RiteshSharmaResume.pdf`}
+           href={`${import.meta.env.BASE_URL}RiteshSharmaResume.pdf`}
             download
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-signal hover:bg-signal/90 text-ink font-semibold text-sm shadow-[0_0_24px_-4px_rgba(45,212,191,0.5)] transition"
           >
