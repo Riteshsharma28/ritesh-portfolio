@@ -571,7 +571,7 @@ export default function App() {
           <FadeItem>
             <div className="flex flex-col sm:flex-row items-center gap-8 rounded-2xl border border-line bg-panel px-8 py-8">
               <div className="shrink-0 flex flex-col items-center">
-                <span className="font-mono text-5xl font-bold text-signal tabular-nums">8.8</span>
+                <span className="font-mono text-5xl font-bold text-signal tabular-nums">7.78</span>
                 <span className="font-mono text-[10px] uppercase tracking-widest text-inkSoft mt-1">CGPA / 10</span>
               </div>
               <div className="hidden sm:block w-px self-stretch bg-line" />
