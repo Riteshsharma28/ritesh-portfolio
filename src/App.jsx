@@ -132,7 +132,7 @@ function KPI({ target, decimals = 0, suffix = "", label }) {
 function KPIStrip() {
   return (
     <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-md mx-auto sm:mx-0">
-      <KPI target={8.8} decimals={1} label="CGPA / 10" />
+      <KPI target={7.78} decimals={1} label="CGPA / 10" />
       <KPI target={2} label="Internships" />
       <KPI target={3} label="Projects Shipped" />
       <KPI target={3} label="Certifications" />
